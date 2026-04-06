@@ -1,0 +1,14 @@
+{
+  "name": "vestabot",
+  "version": "1.0.0",
+  "description": "Discord bot that posts messages to a Vestaboard",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7"
+  }
+}
