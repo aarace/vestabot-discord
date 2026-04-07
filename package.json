@@ -1,5 +1,5 @@
 {
-  "name": "vestabot",
+  "name": "vestabot-discord",
   "version": "1.0.0",
   "description": "Discord bot that posts messages to a Vestaboard",
   "main": "index.js",

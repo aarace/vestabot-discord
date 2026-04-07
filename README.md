@@ -1,4 +1,4 @@
-# Vestabot
+# vestabot-discord
 
 A Discord bot that lets anyone in your server post messages to a Vestaboard using the `/vesta` slash command. Each user is limited to one post per minute.
 
@@ -13,7 +13,7 @@ A Discord bot that lets anyone in your server post messages to a Vestaboard usin
 1. Clone the repository and install dependencies:
    ```bash
    git clone <your-repo-url>
-   cd vestabot
+   cd vestabot-discord
    npm install
    ```
 
@@ -53,22 +53,22 @@ Use `/vesta <message>` in any channel to post to the Vestaboard.
 
 **Build the image:**
 ```bash
-docker build -t vestabot .
+docker build -t vestabot-discord .
 ```
 
 **Start the container** (runs in the background, restarts automatically):
 ```bash
-docker run -d --restart unless-stopped --env-file .env --name vestabot vestabot
+docker run -d --restart unless-stopped --env-file .env --name vestabot-discord vestabot-discord
 ```
 
 **Rebuild after code changes:**
 ```bash
-docker build -t vestabot . && docker rm -f vestabot && docker run -d --restart unless-stopped --env-file .env --name vestabot vestabot
+docker build -t vestabot-discord . && docker rm -f vestabot-discord && docker run -d --restart unless-stopped --env-file .env --name vestabot-discord vestabot-discord
 ```
 
 **Other useful commands:**
 ```bash
-docker logs vestabot       # view logs / errors
-docker restart vestabot    # restart the container
-docker stop vestabot       # stop the container
+docker logs vestabot-discord       # view logs / errors
+docker restart vestabot-discord    # restart the container
+docker stop vestabot-discord       # stop the container
 ```
