@@ -1,4 +1,4 @@
-# vestabot-discord
+# Vestabot (Discord)
 
 A Discord bot that lets anyone in your server post messages to a Vestaboard using the `/vesta` slash command. Each user is limited to one post per minute.
 
