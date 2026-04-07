@@ -60,7 +60,7 @@ client.on("interactionCreate", async (interaction) => {
     return;
   }
 
-  const text = interaction.options.getString("message", true);
+  const text = `${interaction.user.tag}: ${interaction.options.getString("message", true)}`;
 
   // Defer so we have time for the API call
   await interaction.deferReply();
@@ -85,7 +85,7 @@ client.on("interactionCreate", async (interaction) => {
     }
 
     cooldowns.set(userId, now);
-    console.log(`[${interaction.guild.name}] ${interaction.user.tag}: ${text}`);
+    console.log(`[${interaction.guild.name}] ${text}`);
     await interaction.editReply(
       `Posted to the Vestaboard: **${text}**`
     );
