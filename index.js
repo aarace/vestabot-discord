@@ -60,7 +60,7 @@ client.on("interactionCreate", async (interaction) => {
     return;
   }
 
-  const text = `${interaction.user.tag}: ${interaction.options.getString("message", true)}`;
+  const text = `${interaction.options.getString("message", true)}`;
 
   // Defer so we have time for the API call
   await interaction.deferReply();
